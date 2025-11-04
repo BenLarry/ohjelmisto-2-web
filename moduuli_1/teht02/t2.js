@@ -2,4 +2,4 @@
 
 const name = prompt('Enter name:');
 
-document.querySelector('#target').innerText = name;
+document.querySelector('#target').innerText = `Hello ${name}`;
