@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 const name = prompt('Enter your name');
 
 const num = Math.floor(Math.random() * 4);
