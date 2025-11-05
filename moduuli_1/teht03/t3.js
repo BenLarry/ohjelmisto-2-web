@@ -5,7 +5,9 @@ const num2 = +prompt('Enter second number');
 const num3 = +prompt('Enter third number');
 
 const sum = num1 + num2 + num3;
+const avg = sum / 3;
+const mul = num1 * num2 * num3;
 
 document.querySelector(
   '#target'
-).innerText = `summa numeroista ${num1}, ${num2} ja ${num3} on ${sum}`;
+).innerText = `numeroista ${num1}, ${num2} ja ${num3}. Summa: ${sum} keskiarvo: ${avg} ja tulo: ${mul}`;
