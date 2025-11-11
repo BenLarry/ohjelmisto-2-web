@@ -97,7 +97,7 @@ const picLocation = document.querySelector('#pictures');
 for (let i = 0; i < picArray.length; i++) {
   const img = document.createElement('img');
   img.src = picArray[i].image.medium;
-  img.title = picArray[i].title;
+  img.alt = picArray[i].title;
 
   const figureCaption = document.createElement('figcaption');
   figureCaption.textContent = picArray[i].caption;
