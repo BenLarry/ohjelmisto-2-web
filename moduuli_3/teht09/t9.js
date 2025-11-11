@@ -5,10 +5,29 @@ You can use the includes and split methods.
 eval() function is prohibited
 No need to support decimal numbers, calculating integers is enough.
 Example inputs: 3+5, 2-78, 3/6, etc...*/
+const exprArray = [];
+
 const calc = document.querySelector('#start');
 const result = document.querySelector('#result');
 
+function vefiryExpr(exprArray) {
+  const validSymbols = ['+', '-', '/', '*'];
+  const regex = /^[0-9+\-*/.]+$/;
+  if (exprArray[0] === NaN || exprArray[-1] === NaN) {
+    return false;
+  }
+
+  for (let i = 0; i < exprArray.length; i++) {
+    if (regex.test(exprArray[i])) {
+      console.log('xd');
+    }
+  }
+}
+
 calc.addEventListener('click', () => {
   const expr = document.querySelector('#calculation');
-  console.log(expr.value);
+  for (let char of expr.value) {
+    exprArray.push(char);
+  }
+  vefiryExpr(exprArray);
 });
