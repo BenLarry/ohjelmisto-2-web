@@ -2,7 +2,7 @@
 
 const p = document.querySelector('#target');
 const form = document.querySelector('#source');
-
+//FIX
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const names = document.querySelectorAll('form > [name]');
